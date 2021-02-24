@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    .box {
+      height: 600px;
+      width: 800px;
+      border: 1px solid;
+
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .list p {
+      border: 1px solid red;
+      text-align: center;
+      line-height: 80px;
+      height: 80px;
+      width: 80px;
+      cursor: pointer;
+    }
+
+    .list ul {
+      height: 80px;
+      display: flex;
+
+    }
+
+    .list ul li {
+      border: 1px solid red;
+      text-align: center;
+
+      height: 80px;
+      width: 80px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .view section {
+      display: none;
+      height: 518px;
+    }
+
+    .active {
+      display: block !important;
+    }
+
+    .activelis {
+      background: red;
+      color: white;
+    }
+
+    .remove {
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      top: 0;
+      height: 20px;
+      width: 20px;
+    }
+
+    .list ul li span:last-child {
+      display: inline-block;
+      border: 1px solid #fff;
+      width: 50px;
+      height: 70px;
+      line-height: 70px;
+    }
+    input{
+      width: 46px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box" id='box'>
+    <div class="list">
+      <ul class="listul">
+        <li class="activelis">
+          <span class="remove">x</span>
+          <span>1</span>
+        </li>
+
+      </ul>
+      <p class="add">
+        +
+      </p>
+    </div>
+    <div class="view">
+      <section class="active">测试一</section>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
